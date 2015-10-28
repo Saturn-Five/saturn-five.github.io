@@ -5,7 +5,8 @@ html, body {
 }
 
 body {
-    background-image: url('../images/test.png');
+    background-image: url('../images/back.png');
+    background-attachment: fixed;
     background-size: cover;
     font-family:    'Helvetica Neue', Helvetica, sans-serif;
 }
@@ -19,29 +20,32 @@ body {
 
 .splash {
     color: #FFFFFF;
-    padding: 30px 0;
+    padding: 35px 0;
     text-align: center;
     height: 100%;
 }
 
 .title {
+    font-size:  89px;
     margin-top: 60px;
-    font-size: 74px;
 }
 
 .subtitle {
-    color:          #FFFFFF;
-    font-size:      17px;
-    line-height:    13px;
-    font-weight:    200;
+    border-top:     1px solid rgba(255, 255,255, 0.6);
+    color:          rgba(255, 255, 255, 1);
+    font-size:      18px;
+    font-weight:    300;
+    margin:         5px auto;
+    padding:        20px 0 0 0;
+    width:          400px;
 }
 
 .menu {
     display:        -webkit-flex;
     display:        flex;
     font-weight:    200;
-    font-size:      22px;
-    padding:        34px 0;
+    font-size:      20px;
+    padding:        40px 0;
     width:          400px;
     margin:         0 auto;
     -webkit-justify-content: space-around;
@@ -49,32 +53,118 @@ body {
 }
 
 .menu a {
+    border-radius:      8px;
     color:              #FFFFFF;
+    padding:            10px;
     text-decoration:    none;
 }
 
 .menu a:hover {
-    color: #000;;
+    color:      #FFFFFF;
+    background: rgba(0,3,30,0.5);
 }
 
 .superquote {
-    background: rgba(255,0,0,0.5);
-    border-radius: 2px;
-    width: 330px;
-    font-size: 23px;
-    padding: 22px 8px;
-    margin: 42px auto;
-    font-weight: 200;
+    background:     rgba(0,3,30,0.5);
+    border-radius:  8px;
+    font-size:      23px;
+    font-weight:    200;
+    padding:        32px 28px;
+    margin:         42px auto;
+    width:          330px;
 }
 
 .body {
-    padding: 24px 0;
-    height: 100%;
+    padding:    24px 0;
+    height:     100%;
+}
+
+.section {
+    min-height: 100%;
+    text-align: center;
+    padding-top: 34px;
+}
+
+.group {
+    padding:    0px 0 34px 0;
 }
 
 .apps {
-    background: rgb(20,20,20);
-    color: #fff;
-    height: 100%;
-    text-align: center;
+    background: rgb(40,40,40);
+    box-shadow: 0px 0px 10px #000000;
+    color:      #FFFFFF;
+}
+
+.app {
+    margin:     auto;
+    padding:    34px 0 24px 0;
+    width:      500px;
+}
+
+.appname {
+    font-size:      36px;
+    font-weight:    200;
+}
+
+.app .normal {
+    font-weight:    200;
+    font-size:      22px;
+    padding:        24px 0 0 0;
+}
+
+.app .normal.description {
+    color:  #CCCCCC;
+}
+
+.app .normal a {
+    color:              #FFFFFF;
+    padding:            5px 0 5px 0;
+    text-decoration:    none;
+}
+
+.app .normal a:hover {
+    text-decoration:    underline;
+}
+
+.contact {
+    color:      #FFFFFF;
+    font-size:  30px;
+}
+
+.contact .description {
+    font-size:  28px;
+    margin:     5% auto;
+    padding:    0px 0 0 0;
+    width:      670px;
+}
+
+.contact .description a {
+    color:              #FFFFFF;
+    font-weight:        200;
+    text-decoration:    none;
+}
+
+.contact .description a:hover {
+    text-decoration: underline;
+}
+
+.anchor {
+    font-size: 48px;
+}
+
+.navigation {
+    font-size: 18px;
+    padding: 20px 20px 0 0px;
+    text-align: right;
+}
+
+.navigation a {
+    color:              #FFFFFF;
+    font-size:          18px;
+    font-weight:        200;
+    text-decoration:    none;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
 }

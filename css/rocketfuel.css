@@ -1,0 +1,186 @@
+html, body {
+    margin:     0;
+    padding:    0;
+}
+
+body {
+    background:     #F8F8F8;
+    font-weight:    200;
+    text-shadow:    1px 1px 1px rgba(0,0,0,0.005);
+    -webkit-font-smoothing: antialiased !important;
+    font-family:    'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.page-container, h1 {
+}
+
+.splash {
+    background:     rgb(41,41,41);
+    box-shadow:     1px 1px 8px #000;
+    color:          #FFFFFF;
+    text-align:     center;
+    padding:        24px 0 24px 0;
+}
+
+.header-title {
+    font-size:  68px;
+    width:      100%;
+    display:    block;
+    position:   relative;
+}
+
+.header-title::after {
+  content:              "";
+  background-image:     url('../images/logo_rocketfuel.png');
+  background-position:  center;
+  background-size:      contain;
+  background-repeat:    no-repeat;
+  opacity:              0.1;
+  top:                  0;
+  left:                 0;
+  bottom:               0;
+  right:                0;
+  position:             absolute;
+  width:                100%;
+}
+
+.header-subtext {
+    width:      100%;
+    font-size:  28px;
+}
+
+.front-image {
+    padding:    28px 0 28px 0;
+}
+
+.front-image > img {
+    width:      100%;
+}
+
+.description {
+    width:      80%;
+    margin:     auto;
+    font-size:  28px;
+    padding:    30px 0 30px 0;
+}
+
+.features {
+    font-size:      20px;
+    margin:         auto;
+    padding:        10px 0 30px 0;
+    width:          80%;
+    text-align:     left;
+    display:        -webkit-flex;
+    display:        flex;
+    -webkit-justify-content: space-around;
+            justify-content: space-around;
+}
+
+.features > div:first-of-type {
+    width: 40%;
+}
+
+.features > div:last-of-type {
+    width: 30%;
+}
+
+.features ul {
+    margin:             0;
+    padding:            0px;
+    list-style-type:    none;
+    display:            inline-block;
+
+}
+
+.features ul li {
+    background-image:   url("../images/logo_rocketfuel.png");
+    background-size:    14px;
+    background-repeat:  no-repeat;
+    background-position: 0;
+    padding-left:       25px;
+ }
+
+.download {
+    display:        -webkit-flex;
+    display:        flex;
+    flex-direction: column;
+    text-align:     center;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    -webkit-flex-direction:  column;
+    -webkit-box-orient:      vertical;
+}
+
+.download > div {
+    font-size:          18px;
+    font-weight:        300;
+}
+
+.download > div > a {
+    background:         rgba(255,255,255,.1);
+    border-radius:      4px;
+    color:              #FFFFFF;
+    text-decoration:    none;
+    padding:            10px;
+}
+
+.download > div > a:hover {
+    background:     rgba(255,255,255,1);
+    color:          rgb(40,40,40);
+}
+
+.requirements {
+    font-size:      12px;
+    font-weight:    300;
+    padding-top:    12px;
+}
+
+.body {
+    color:          rgb(40,40,40);
+    padding:        40px 0 30px 0;
+    width:          80%;
+    margin:         auto;
+}
+
+.body > div {
+    padding: 0 10px;
+}
+
+
+.split-view {
+    display:        -webkit-flex;
+    display:        flex;
+    width:          100%;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+}
+
+.split-view > div:first-of-type {
+    width: 40%;
+}
+
+.split-view > div:last-of-type {
+    width: 30%;
+}
+
+.about > div:first-of-type {
+    font-size: 22px;
+}
+
+.about > div {
+    padding-bottom: 8px;
+}
+
+.about a, .about span {
+    color: #000;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.documentation {
+    padding: 0 10px;
+}
+
+.documentation h1 {
+    font-weight: 300;
+}

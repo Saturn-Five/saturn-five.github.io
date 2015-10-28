@@ -4,17 +4,28 @@
         <meta charset="utf-8">
         <title>Saturn Five</title>
         <link rel="stylesheet" href="css/master.css" media="screen" charset="utf-8">
-
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function (){
+                $(".scroller").click(function (e) {
+                    // Stop the link execution
+                    e.preventDefault();
+                    var anchor = $(this).attr("href");
+                    $('body').animate({ scrollTop: $(anchor).offset().top }, 500);
+                });
+            });
+        </script>
     </head>
     <body>
+        <a name="top" id="top"></a>
         <div class="page-container">
             <div class="splash">
                 <div class="title">Saturn Five</div>
-                <div class="subtitle">Exploration, inspiration, decommission</div>
+                <div class="subtitle">OS X, iOS, and web development</div>
                 <div class="menu">
-                    <div><a href="#apps">Apps</a></div>
-                    <div><a href="#">Github</a></div>
-                    <div><a href="#contact">Contact</a></div>
+                    <div><a href="#apps" class="scroller">Applications</a></div>
+                    <div><a href="https://github.com/saturn-five/" target="_blank">Github</a></div>
+                    <div><a href="#contact" class="scroller">Get in touch</a></div>
                 </div>
                 <blockquote class="superquote">
                     <div>"It was an eerie feeling, like being a gnat inside a blowtorch flame"</div>
@@ -22,14 +33,42 @@
                 </blockquote>
             </div>
             <div class="body">
-                <div class="apps">
-                    <a name="apps"></a>
-                    <div>
+                <div class="section apps" id="apps">
+                    <a name="apps" class="anchor">Applications</a>
+                    <div class="group">
+                        <div class="app">
+                            <div class="appname">
+                                Rocket Fuel
+                            </div>
+                            <div class="normal description">
+                                Rocket Fuel is a small, easy to use app that sits discreetly in your menu bar awaiting your command. A simple click will prevent your Mac from going to sleep or dimming its display.
+                            </div>
+                            <div class="normal">
+                                <a href="rocketfuel.html">Read more and download</a>
+                            </div>
+                        </div>
+                        <div class="app">
+                            <div class="appname">
+                                ComicZipper
+                            </div>
+                            <div class="normal description">
+                                Create Comic Book Archives with the ComicZipper application. Just drag and drop a folder containing the images to compress the file.
+                            </div>
+                            <div class="normal">
+                                <a href="http://saturn-five.github.io/ComicZipper/">Read more and download</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="apps">
-                    <a name="contact"></a>
-                    Contact
+                <div class="section contact" id="contact">
+                    <a name="contact" class="anchor">Get in touch</a>
+                    <div class="group">
+
+                        <div class="description">
+                            <p>Want to get in touch with me? Send me a few lines at <a>me@saturnfive.xyz</a> or create an issue on <a href="https://saturnfive.github.com/">Github</a>.</p>
+                            <p>I'm also at Twitter: <a>@ardalansamimi</a>.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
