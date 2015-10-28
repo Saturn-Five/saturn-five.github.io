@@ -4,21 +4,12 @@
         <meta charset="utf-8">
         <title>Saturn Five</title>
         <link rel="stylesheet" href="css/master.css" media="screen" charset="utf-8">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function (){
-                $(".scroller").click(function (e) {
-                    // Stop the link execution
-                    e.preventDefault();
-                    var anchor = $(this).attr("href");
-                    $('body').animate({ scrollTop: $(anchor).offset().top }, 500);
-                });
-            });
-        </script>
+        <script src="javascript/jquery-2.1.4.js"></script>
     </head>
     <body>
         <a name="top" id="top"></a>
         <div class="page-container">
+            <!-- begin .splash -->
             <div class="splash">
                 <div class="title">Saturn Five</div>
                 <div class="subtitle">OS X, iOS, and web development</div>
@@ -32,6 +23,7 @@
                     <div style="font-size:15px;text-align:right;">&mdash; William Anders, Apollo 8.</div>
                 </blockquote>
             </div>
+            <!-- end .splash / begin .body -->
             <div class="body">
                 <div class="section apps" id="apps">
                     <a name="apps" class="anchor">Applications</a>
@@ -70,7 +62,21 @@
                         </div>
                     </div>
                 </div>
+                <div class="navigation">
+                    <a href="#top" class="scroller">Back to top</a>
+                </div>
             </div>
+            <!-- end .body -->
         </div>
+        <script>
+            $(document).ready(function (){
+                $(".scroller").click(function (e) {
+                    // Stop the link execution
+                    e.preventDefault();
+                    var anchor = $(this).attr("href");
+                    $('html,body').animate({ scrollTop: $(anchor).offset().top }, 500);
+                });
+            });
+        </script>
     </body>
 </html>
