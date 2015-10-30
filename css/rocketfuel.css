@@ -64,24 +64,30 @@ body {
     padding:    30px 0 30px 0;
 }
 
+
+.split-view {
+    display:        -webkit-flex;
+    display:        flex;
+}
+
 .features {
     font-size:      20px;
     margin:         auto;
     padding:        10px 0 30px 0;
     width:          80%;
     text-align:     left;
-    display:        -webkit-flex;
-    display:        flex;
     -webkit-justify-content: space-around;
             justify-content: space-around;
 }
 
 .features > div:first-of-type {
     width: 40%;
+    min-width: 300px;
 }
 
 .features > div:last-of-type {
     width: 30%;
+    min-width: 200px;
 }
 
 .features ul {
@@ -105,8 +111,8 @@ body {
     display:        flex;
     flex-direction: column;
     text-align:     center;
-    -webkit-justify-content: space-between;
-            justify-content: space-between;
+    -webkit-justify-content: space-around;
+            justify-content: space-around;
     -webkit-flex-direction:  column;
     -webkit-box-orient:      vertical;
 }
@@ -146,20 +152,19 @@ body {
     padding: 0 10px;
 }
 
-
-.split-view {
-    display:        -webkit-flex;
-    display:        flex;
+.about-box {
     width:          100%;
     -webkit-justify-content: space-between;
             justify-content: space-between;
+
 }
 
-.split-view > div:first-of-type {
+.about-box > div:first-of-type {
     width: 40%;
+    min-width: 390px;
 }
 
-.split-view > div:last-of-type {
+.about-box > div:last-of-type {
     width: 30%;
 }
 

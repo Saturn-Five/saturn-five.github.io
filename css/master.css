@@ -23,15 +23,18 @@ body {
     padding:    35px 0;
     text-align: center;
     height:     100%;
+    z-index: 5;
+    position: relative;
 }
 
 .title {
+    color: #FF9;
     font-size:  89px;
     margin-top: 60px;
 }
 
 .subtitle {
-    border-top:     1px solid rgba(255, 255,255, 0.6);
+    border-top:     1px solid rgba(255, 255, 135, 0.6);
     color:          rgba(255, 255, 255, 1);
     font-size:      18px;
     font-weight:    300;
@@ -135,7 +138,7 @@ body {
     font-size:  28px;
     margin:     5% auto;
     padding:    0px 0 0 0;
-    width:      670px;
+    max-width:      670px;
 }
 
 .contact .description a {
@@ -153,15 +156,16 @@ body {
 }
 
 .navigation {
-    color:      #FFFFFF;
-    font-size:  22px;
     text-align: center;
-    padding:    0 0 24px 0;
+    padding:    0 0 3px 8px;
+    position:   fixed;
+    bottom:     0;
+    left:       0;
 }
 
-
 .navigation a {
-    color:              #FFFFFF;
+    color:              #FFFF99;
+    font-size:          18px;
     font-weight:        200;
     text-decoration:    none;
 }

@@ -1,0 +1,25 @@
+@media all and (max-width: 600px) {
+
+    .split-view {
+        -webkit-flex-direction: column;
+        -webkit-align-items: center;
+    }
+
+    .features {
+        text-align: center;
+    }
+
+    .split-view > div:first-of-type {
+        padding: 0px 0 30px 0;
+        width: 100%;
+    }
+
+    .split-view > div:last-of-type {
+        width: 100%;
+    }
+
+    .features > div:last-of-type > div:first-of-type {
+        padding: 0 0 30px 0;
+    }
+
+}
